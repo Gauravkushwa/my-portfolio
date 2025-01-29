@@ -1,4 +1,3 @@
-import { Link, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { Home } from './components/home';
 import { Projects } from './components/projects';
@@ -9,13 +8,20 @@ import { Contact } from './components/contact';
 function App() {
   return (
     <>
-      <nav className='navbar'>
+      <nav className="navbar">
+        {/* "My Portfolio" label on the left */}
+        <div className="portfolio-logo">
+          <a href="#home">My Portfolio</a>
+        </div>
+        
         {/* Navigation Links */}
-        <Link to="#home">Home</Link>
-        <Link to="#skills">Skills</Link>
-        <Link to="#projects">Projects</Link>
-        <Link to="#about">About</Link>
-        <Link to="#contact">Contact</Link>
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
       </nav>
 
       <div className="content">
@@ -44,7 +50,6 @@ function App() {
           <Contact />
         </section>
       </div>
-
     </>
   );
 }

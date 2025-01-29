@@ -197,10 +197,18 @@ circle {
 }
 
 /* Circular Progress Animations */
-.creativity { stroke-dashoffset: calc(283 - (283 * 90) / 100); }
-.problem-solving { stroke-dashoffset: calc(283 - (283 * 75) / 100); }
-.communication { stroke-dashoffset: calc(283 - (283 * 85) / 100); }
-.teamwork { stroke-dashoffset: calc(283 - (283 * 80) / 100); }
+.creativity {
+     stroke-dashoffset: calc(283 - (283 * 90) / 100); 
+    }
+.problem-solving {
+     stroke-dashoffset: calc(283 - (283 * 75) / 100);
+     }
+.communication {
+     stroke-dashoffset: calc(283 - (283 * 85) / 100);
+     }
+.teamwork {
+     stroke-dashoffset: calc(283 - (283 * 80) / 100);
+     }
 .skill-logo {
     width: 30px; /* Adjust the size of the logo */
     height: 30px; /* Keep it proportional */

@@ -1,8 +1,9 @@
 #contact {
-    padding: 60px 20px;
+    padding:0 20px 20px 20px;
     background: linear-gradient(135deg, #1e1e1e, #121212);
     color: #fff;
-    display: flex;
+    /* display: flex; */
+    flex-wrap: wrap; /* Allow the content to wrap on smaller screens */
     justify-content: space-between;
     gap: 30px;
   }
@@ -11,11 +12,13 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap; /* Ensure child elements wrap if necessary */
   }
   
   .social-media {
-    width: 40%; /* Take up the left side */
+    width: 40%; /* Take up 40% of the width on large screens */
     text-align: left;
+    margin-bottom: 30px; /* Add some space at the bottom for smaller screens */
   }
   
   .social-media h3 {
@@ -50,7 +53,7 @@
   }
   
   .contact-form-container {
-    width: 55%; /* Take up the right side */
+    width: 55%; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -59,16 +62,15 @@
   
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
-    color: #00bcd4; /* Neon blue */
-  }
+    color: #00bcd4; 
+  } 
   
-  .contact-form {
+  .contact-form{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
   
   .contact-form input,
@@ -113,12 +115,16 @@
   
   @media (max-width: 768px) {
     .contact-container {
-      flex-direction: column;
+      flex-direction: column; /* Stack the social media and form on small screens */
       align-items: center;
     }
-    
+  
     .social-media, .contact-form-container {
-      width: 100%;
+      width: 100%; /* Full width on small screens */
+    }
+  
+    .contact-container {
+      gap: 20px; /* Add gap between the stacked sections */
     }
   }
   

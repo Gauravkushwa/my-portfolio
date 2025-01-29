@@ -2,6 +2,7 @@ import './style/about.css'
 export const About = () => {
     return (
         <>
+        <h1 style={{color:"#4caf50", fontSize:"40px",margin:"-20px"}}>About Me</h1>
             <section id="about">
                 <div class="about-container">
                     <h2>👋 Hi, I'm <span class="highlight">Gaurav Kushwaha</span> !</h2>

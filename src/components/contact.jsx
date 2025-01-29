@@ -31,8 +31,9 @@ export const Contact = () => {
 
   return (
     <>
-     <h2 style={{textAlign:"center"}}>📩 Contact Me</h2>
+     <h2>📩 Contact Me</h2>
     <section id="contact">
+    
       <div className="contact-container">
         {/* Left side: Social Media */}
         <div className="social-media">

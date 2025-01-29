@@ -1,52 +1,89 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(0, 0, 33);
-    color: white;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 33);
+  color: white;
+  margin-top: 70px; /* Adjust this to prevent content from being hidden under the navbar */
+}
+
+.navbar {
+  position: fixed; /* Make the navbar fixed at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Take full width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+  background-color: #333;
+  color: #fff;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.navbar .portfolio-logo {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-left: 20%;
+}
+
+.navbar .portfolio-logo a {
+  color: #00bcd4;  /* Neon blue color */
+  text-decoration: none;
+  font-size: 2.3rem;
+  transition: color 0.5s ease;
+}
+
+.navbar .portfolio-logo a:hover {
+  color: #188787; /* White on hover */
+}
+
+/* Navigation Links Styling */
+.navbar .nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar .nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.navbar .nav-links a:hover {
+  background-color: #00bcd4;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
   .navbar {
-    display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;  /* Center-align items */
+    padding: 10px;
+  }
+
+  .navbar .portfolio-logo {
+    margin-bottom: 20px;  /* Add space between logo and links */
+  }
+
+  .navbar .nav-links {
+    flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding: 15px 20px;
-    background-color: #333;
-    color: #fff;
   }
-  
-  .navbar a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    padding: 8px 15px;
-    transition: all 0.3s ease;
-    border-radius: 5px;
+
+  .navbar .nav-links a {
+    padding: 10px;
+    text-align: center;
+    width: auto;
   }
-  
-  .navbar a:hover {
-    background-color: #00bcd4;
-    color: #fff;
-    transform: scale(1.1);
-  }
-  
-  /* Media Query for Smaller Screens */
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: flex-start; 
-      padding: 10px;
-    }
-  
-    .navbar a {
-      padding: 10px;
-      width: auto;
-      text-align: right;
-    }
-  }
-  
+}

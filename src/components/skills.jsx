@@ -4,7 +4,7 @@ export const Skills = () => {
         <>
             <div className="skills-container">
                 <h2>🚀 Technical Skills</h2>
-
+                 <br />
                 {/* Frontend Skills */}
                 <h3>🎨 Frontend</h3>
                 <div className="skill">
