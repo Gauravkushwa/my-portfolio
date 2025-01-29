@@ -1,0 +1,212 @@
+main{
+    height: 100vh;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0;
+}
+.firstSection > div{
+    width: 40%;
+}
+.leftSection{
+    font-size: 2.3rem;
+    margin-top: 40px;
+}
+.rightSection img{
+    width: 70%;
+    margin-left: 20%;
+}
+.purple{
+    color: rgb(170, 107, 228);
+}
+.animated{
+    color: rgb(170, 107, 228);
+}
+.button {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.button button:first-child:hover {
+    background-color: #0966cb;
+}
+
+.button button:last-child {
+    background-color: #333;
+    color: white;
+}
+.resume:hover{
+    background-color: aquamarine;
+}
+
+.button button:last-child:hover {
+    background-color: #000;
+}
+
+.rightSection img {
+    width: 60%;
+    height: 290px;
+    border-radius: 50%;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out, opacity 1s ease-in-out;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 2s forwards; /* Apply the fadeIn animation */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1; /* Fade the image in */
+    }
+  }
+  
+  
+  .rightSection img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.85);
+  }
+/* General Styles */
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px 80px 50px 80px;
+    background: #0d1b2a;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+h2, h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid cyan;
+    display: inline-block;
+}
+
+h3 {
+    font-size: 18px;
+    color: cyan;
+    margin-top: 30px;
+}
+
+/* Progress Bar Styles */
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    margin-bottom: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    width: 0;
+    background: cyan;
+    transition: width 1s ease-in-out;
+}
+
+/* Width Adjustments */
+.html { width: 90%; }
+.css { width: 80%; }
+.js { width: 85%; }
+.react { width: 80%; }
+.redux { width: 75%; }
+.node { width: 70%; }
+.express { width: 65%; }
+.mongo { width: 75%; }
+.python { width: 70%; }
+.git { width: 85%; }
+.github { width: 80%; }
+.vscode { width: 90%; }
+.postman { width: 75%; }
+
+/* Circular Progress Styles */
+.circle-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.circle {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.circle p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+svg {
+    width: 100px;
+    height: 100px;
+}
+
+circle {
+    fill: none;
+    stroke-width: 6;
+    stroke: rgba(255, 255, 255, 0.2);
+    cx: 50;
+    cy: 50;
+    r: 45;
+    transform: rotate(-90deg);
+    transform-origin: center;
+}
+
+.progress-circle {
+    stroke: cyan;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* Circular Progress Animations */
+.creativity { stroke-dashoffset: calc(283 - (283 * 90) / 100); }
+.problem-solving { stroke-dashoffset: calc(283 - (283 * 75) / 100); }
+.communication { stroke-dashoffset: calc(283 - (283 * 85) / 100); }
+.teamwork { stroke-dashoffset: calc(283 - (283 * 80) / 100); }
+.skill-logo {
+    width: 30px; /* Adjust the size of the logo */
+    height: 30px; /* Keep it proportional */
+    margin-right: 10px; /* Space between the logo and the skill name */
+    /* vertical-align: middle; Align the logo with the text */
+  }
+  .skills-container > p{
+    text-align: left;
+  }
